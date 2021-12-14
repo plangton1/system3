@@ -100,8 +100,8 @@
   .grid-3{
     display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
-  justify-items: center;
-  align-items: center;
+  justify-items: stretch;
+  align-items: stretch;
   column-gap: 20px;
   row-gap: 5px;
   
