@@ -34,6 +34,11 @@
                     <input type="text" name="standard_detail" class="form-control">
                 </div>
 
+                <!-- <div class="form-group mb-2">
+                    <label for="">ประเภทผลิตภัณฑ์. </label>
+                    <input type="text" name="type_id" class="form-control">
+                </div> -->
+
                 <div class="form-group mb-2">
                             <div class="form-group mb-2">
                                 <label for="">มาตรฐานบังคับ</label>
@@ -65,7 +70,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-2">
                                             <label for="">กลุ่มผลิตภัณฑ์</label>
-                                            <input type="text" name="group_name[]" class="form-control" required placeholder="กรอกกลุ่มผลิตภัณฑ์">
+                                            <input type="text" name="group_name[]" class="form-control"  placeholder="กรอกกลุ่มผลิตภัณฑ์">
                                         </div>
                                     </div>
                                   
@@ -81,7 +86,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-2">
                                             <label for="">หน่วยงานที่สามารถทดสอบได้</label>
-                                            <input type="text" name="agency_name[]" class="form-control" required placeholder="กรอกหน่วยงานที่ต้องการทดสอบ">
+                                            <input type="text" name="agency_name[]" class="form-control"  placeholder="กรอกหน่วยงานที่ต้องการทดสอบ">
                                         </div>
                                     </div>
                                   
@@ -98,7 +103,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-2">
                                             <label for="">หน่วยงานที่ขอ</label>
-                                            <input type="text" name="department_name[]" class="form-control" required placeholder="กรอกหน่วยงานที่ขอ">
+                                            <input type="text" name="department_name[]" class="form-control"  placeholder="กรอกหน่วยงานที่ขอ">
                                         </div>
                                     </div>
                                   

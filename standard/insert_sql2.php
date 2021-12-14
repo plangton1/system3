@@ -17,7 +17,7 @@ if(isset($_POST['save_multiple_data']))
         foreach($agency_name as $index => $agency_name)
         {
             foreach($department_name as $index => $department_name)
-            {
+        {
         $group_name = $group_name;
         $agency_name = $agency_name;
         $department_name = $department_name;
@@ -29,11 +29,11 @@ if(isset($_POST['save_multiple_data']))
         $standard_mandatory = $standard_mandatory;
 
         $query = "INSERT INTO standard_tb (department_name,agency_name,standard_mandatory,group_name,standard_meet,standard_tacking,standard_number,standard_detail,standard_note) VALUES (?,?,?,?,?,?,?,?,?)";
-        $params =array($department_name,$agency_name,$standard_mandatory,$group_name,$standard_meet,$standard_tacking,$standard_number,$standard_detail,$standard_note);
-        $sss = sqlsrv_query($conn, $query,$params);
-            }
+        $params =array($department_name,$agency_name,$standard_mandatory,$group_name,$standard_meet,$standard_tacking,$standard_number,$standard_detail,$standard_note);   
+        $sss = sqlsrv_query($conn , $query , $params);
         }
     }
+}
     if (sqlsrv_query($conn, $query , $params)) {
         $alert = '<script type="text/javascript">';
         $alert .= 'alert("เพิ่มข้อมูลสำเร็จ !!");';
@@ -45,5 +45,6 @@ if(isset($_POST['save_multiple_data']))
         echo "Error: " . $query . "<br>" . sqlsrv_errors($conn);
     }
     sqlsrv_close($conn);
-}
+
+    }
 ?> 

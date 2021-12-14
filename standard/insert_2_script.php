@@ -64,7 +64,7 @@
         });
 
         $(document).on('click', '.add-more-form2', function() {
-            $('.paste-new-forms2').append('<div class="main-form1 mt-3 border-bottom">\
+            $('.paste-new-forms2').append('<div class="main-form2 mt-3 border-bottom">\
                     <div class="row">\
                         <div class="col-md-4">\
                             <div class="form-group mb-2">\
